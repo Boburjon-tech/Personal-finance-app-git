@@ -24,8 +24,10 @@ function Login() {
         <div>
         <h1 className={style.right_title}>Login</h1>
           <form className={style.right_form}>
-            <FormInput/>
-            <FormInput/>
+            <FormInput type="email" name="email" label="email"/>
+            <FormInput type="password" name="password" label="password"/>
+
+            <button className={`${style.login_btn} btn`}>Login</button>
           </form>
         </div>
       </div>

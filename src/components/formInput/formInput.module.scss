@@ -1,0 +1,21 @@
+.form_input {
+    display: flex;
+    flex-direction: column;
+    gap : 4px;
+    span {
+        color: $grey-500;
+        font-size: $text-preset-5;
+    }
+
+    input {
+        padding: 1.2rem 2rem;
+        border-radius: 0.8rem;
+        border: 1px solid $grey-500;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

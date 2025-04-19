@@ -51,14 +51,29 @@
     div {
         background-color: $white;
         padding: 3.2rem;
+        border-radius : 1.2rem;
+        width: 100%;
+        max-width: 560px;
     }
 }
 
 .right_title {
-
+    margin-bottom: 3.2rem;
+    color : $grey-900;
+    font-size: $text-preset-1;
 }
 
 .right_form {
     display: flex;
     flex-direction: column;
+}
+
+.login_btn {
+    margin-top: 3rem;
+    background-color:$grey-900;
+    color: $white;
+
+    &:hover {
+        opacity : 0.8
+    }
 }
