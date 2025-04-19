@@ -1,0 +1,37 @@
+import FormInput from "../../components/formInput/FormInput";
+import style from  "./Login.module.scss"
+
+import React from 'react'
+
+function Login() {
+  return (
+    <section className={style.login}>
+      <div className={`${style.container} container`}>
+      <div className={style.login_left}>
+        <img className={style.left_logo} src="../../images/logo-large.svg" width="121.45px" height="21.76px" />
+        
+          <h3 className={style.left_h3_sentence}>
+            Keep track of your money
+            and save for your future
+          </h3>
+          <p  className={style.left_par_sentence}>
+            Personal finance app puts you in control of your spending. Track transactions, set budgets, and add to savings pots easily.
+          </p>
+       
+
+      </div>
+      <div className={style.login_right}>
+        <div>
+        <h1 className={style.right_title}>Login</h1>
+          <form className={style.right_form}>
+            <FormInput/>
+            <FormInput/>
+          </form>
+        </div>
+      </div>
+    </div>
+    </section>
+  )
+}
+
+export default Login;

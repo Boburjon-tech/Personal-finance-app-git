@@ -1,0 +1,40 @@
+*,*:after,*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol li {
+    list-style: none;
+}
+img {
+    display: flex;
+    object-fit: cover;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: "Public Sans",serif;
+    height: 100%;
+    background-color: #F8F4F0;
+}
+
+#root {
+    height: 100%;
+}

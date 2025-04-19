@@ -1,0 +1,15 @@
+.overAll_wrapper_div {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) 1fr;
+    min-height: 100vh;
+}
+
+@media (max-width : 768px) {
+    .overAll_wrapper_div {
+        display : flex;
+        flex-direction : column;
+    };
+    main {
+        margin-bottom : auto;
+    }
+}

@@ -1,0 +1,64 @@
+.login {
+    height: 100%;
+
+   
+}
+
+.container {
+  
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        padding: 2rem;
+        height: inherit;
+}
+
+.login_left {
+    background-image:url("../images/illustration-authentication.svg");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem ;
+    border-radius: 12px;
+    display: flex ;
+    flex-direction: column ;
+    img {
+        margin-bottom: auto;
+    }
+}
+
+
+.left_sentences_wrapper {
+ 
+}
+
+.left_h3_sentence {
+    font-size: $text-preset-1;
+    color: $white;
+    margin-bottom: 2.4rem;
+    line-height: 120%;
+}
+.left_par_sentence{
+    font-size: $text-preset-4;
+    color : $white;
+    line-height: $line-height-150;
+}
+
+.login_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div {
+        background-color: $white;
+        padding: 3.2rem;
+    }
+}
+
+.right_title {
+
+}
+
+.right_form {
+    display: flex;
+    flex-direction: column;
+}
