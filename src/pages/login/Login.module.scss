@@ -96,3 +96,30 @@
     font-weight: bold;
     color: $grey-900;
 }
+
+@media (max-width : 768px){
+    .login_left {
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .header_tabled_div {
+        width: 100%;
+        display: flex;
+        margin-bottom: auto;
+        background-color : $grey-900;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 0.8rem;
+        border-bottom-right-radius : 0.8rem;
+    }
+    .header_tabled_logo {
+        margin-top: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+}

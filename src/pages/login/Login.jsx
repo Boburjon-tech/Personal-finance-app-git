@@ -16,8 +16,9 @@ function Login() {
           <p  className={style.left_par_sentence}>
             Personal finance app puts you in control of your spending. Track transactions, set budgets, and add to savings pots easily.
           </p>
-       
-
+      </div>
+      <div className={style.header_tabled_div}>
+              <img className={style.header_tabled_logo} src="../../images/logo-large.svg"/>
       </div>
       <div className={style.login_right}>
         <div>
