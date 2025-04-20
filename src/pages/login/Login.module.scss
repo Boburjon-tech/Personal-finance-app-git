@@ -91,6 +91,10 @@
     color : $grey-500
 }
 
+.header_tabled_div {
+    display: none;
+}
+
 .nav_to_link {
     font-size: $text-preset-4;
     font-weight: bold;
@@ -111,6 +115,10 @@
     .header_tabled_div {
         width: 100%;
         display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
         margin-bottom: auto;
         background-color : $grey-900;
         align-items: center;
