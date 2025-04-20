@@ -1,7 +1,6 @@
 import FormInput from "../../components/formInput/FormInput";
 import style from  "./Login.module.scss"
-
-import React from 'react'
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -28,6 +27,10 @@ function Login() {
             <FormInput type="password" name="password" label="password"/>
 
             <button className={`${style.login_btn} btn`}>Login</button>
+            <div className={style.nav_to_div}>
+                    <p className={style.nav_to_title}>Need to create an account?</p>
+                    <Link className={style.nav_to_link} to="/register">Sign up</Link>
+            </div>
           </form>
         </div>
       </div>

@@ -77,3 +77,22 @@
         opacity : 0.8
     }
 }
+
+
+.nav_to_div {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.nav_to_title {
+    font-size: $text-preset-4;
+    color : $grey-500
+}
+
+.nav_to_link {
+    font-size: $text-preset-4;
+    font-weight: bold;
+    color: $grey-900;
+}
