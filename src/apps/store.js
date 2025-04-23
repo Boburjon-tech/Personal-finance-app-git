@@ -1,8 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "./features/userSlice"
+import userReducer from "./features/userSlice"; // bu default export bo'lishi kerak
 
 export const store = configureStore({
-    reducer: {
-        user: userReducer
-    },
-})
+  reducer: {
+    user: userReducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
+
+});
+
+

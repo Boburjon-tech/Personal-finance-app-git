@@ -1,3 +1,10 @@
+// src/firebase/config.js
+
+
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
+// Firebase config – production uchun
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -5,13 +12,17 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAuTVAsjoYh-42wkgoHqcAyYExAHzc5YUs",
-  authDomain: "finance-f8a66.firebaseapp.com",
-  projectId: "finance-f8a66",
-  storageBucket: "finance-f8a66.firebasestorage.app",
-  messagingSenderId: "7135059519",
-  appId: "1:7135059519:web:c1ba77fb76de36d564628a"
+  apiKey: "AIzaSyDZ5lb3CMEC1ts0APUk8bgTjYuEyQaU798",
+  authDomain: "finance-5cfcd.firebaseapp.com",
+  projectId: "finance-5cfcd",
+  storageBucket: "finance-5cfcd.firebasestorage.app",
+  messagingSenderId: "979165405164",
+  appId: "1:979165405164:web:57f768dc8406e89f4a6ac9"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+
+export const db = getFirestore();  
+export const auth = getAuth();      

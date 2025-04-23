@@ -1,10 +1,22 @@
 import { Link } from "react-router-dom";
 import FormInput from "../../components/formInput/FormInput";
 import style from  "./Register.module.scss"
-
-import React from 'react'
+import useRegister from "../../hooks/useRegister";
 
 function Register() {
+  const {data, isPending, register} = useRegister()
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const password = formData.get("password")
+
+    register(name,email,password);
+    e.target.reset();
+  }
+
   return (
     <section className={style.login}>
       <div className={`${style.container} container`}>
@@ -25,12 +37,13 @@ function Register() {
       <div className={style.login_right}>
         <div>
         <h1 className={style.right_title}>Sign up</h1>
-          <form className={style.right_form}>
+          <form onSubmit={handleSubmit} className={style.right_form}>
             <FormInput type="Name" name="name" label="Name"/>
             <FormInput type="email" name="email" label="email"/>
             <FormInput type="password" name="password" label="Create password"/>
             <p className={style.password_authentification}>Passwords must be at least 8 characters</p>
-            <button className={`${style.login_btn} btn`}>Register</button>
+            {!isPending && <button className={`${style.login_btn} btn`}>Sign up</button>}
+            {isPending && <button className={`${style.login_btn} btn`}>Loading...</button>}
 
             <div className={style.nav_to_div}>
               <p className={style.nav_to_title}>Already have an account?</p>

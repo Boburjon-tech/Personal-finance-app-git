@@ -15,7 +15,7 @@ const userSlice = createSlice ({
             state.payload = null;
         },
         isAuthReady : (state) => {
-            state.authReady = true
+            state.authReady = true;
         },
 
     },
