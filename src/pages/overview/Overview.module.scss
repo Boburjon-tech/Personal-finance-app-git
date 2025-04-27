@@ -1,8 +1,143 @@
 .overviewMainDiv {
     padding: 3.2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
 }
 
 .overviewTitle {
     font-size: $text-preset-1;
     color: $grey-900;
 }
+
+.ballance_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+
+    .ballance_div:nth-child(1){
+        background-color: $grey-900;
+        color: $white;
+
+        .ballance_title {
+            font-size: $text-preset-4;
+            color: $white;
+        }
+
+    }
+}
+.ballance_div {
+    border-radius: 1.2rem;
+    color : $grey-900;
+    width: 100% ;
+    max-width: 337.33px;
+    padding: 2.4rem;
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+    background-color:$white;
+
+    h3 {
+        font-size: $text-preset-1;
+        display: flex;
+    }
+}
+.ballance_title {
+    font-size: $text-preset-4;
+    color : $grey-500 ;
+}
+
+@media (max-width: 768px){
+    .ballance_div{
+        max-width: 213.33px;
+    }
+}
+
+@media (max-width: 375px) {
+    .ballance_section {
+        flex-direction: column;
+    }
+    .ballance_div{
+        max-width : 343px;
+    }
+
+    .overviewMainDiv {
+        padding: 2.4rem 1.6rem;
+    }
+   
+}
+
+
+// FOUR-DETAILS-GRIDING    ::::::
+
+.four_Details_div {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(10,1fr);
+
+    section:nth-child(1){
+        grid-column: 1/7;
+        grid-row: 1/4;
+    }
+    section:nth-child(2){
+        grid-column: 8/13;
+        grid-row: 1/6;
+    }
+    section:nth-child(3){
+        grid-column : 1/7;
+        grid-row: 5/10;
+    }
+    section:nth-child(4){
+        grid-column : 8/13;
+        grid-row: 7/10;
+    }
+}
+
+// POTS-SECTION ::::::
+
+.Pots_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.pots_title_div {
+    display: flex;
+    justify-content: space-between;
+    a{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+}
+
+.totals_div {
+    display: flex;
+    gap: 2rem;
+
+    
+
+    div:nth-child(1){
+        width: 100%;
+        max-width: 24.7rem;
+    }
+
+    div:nth-child(2){
+        width: 100%;
+        max-width: 27.7rem;
+    }
+}
+
+.total_saved_main {
+    display: flex;
+}
+
+.total_saved{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+
+
+
