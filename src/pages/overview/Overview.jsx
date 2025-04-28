@@ -1,7 +1,8 @@
 import style from  "./Overview.module.scss"
 import { useCollectionsData } from "../../hooks/useCollectionData"
 import { useCollection } from "../../hooks/useCollection";
-// import { Chart } from "../../components/Chart";
+import { Link } from "react-router-dom";
+import { Chart } from "../../components/Chart";
 
 function Overview() {
   const {data,isPending} = useCollectionsData()
@@ -27,16 +28,16 @@ function Overview() {
 
      <div className={style.four_Details_div}>
       <section className={style.Pots_section}>
-        <div className={style.pots_title_div}>
+        <Link to="/posts" className={style.pots_title_div}>
           <h3 className={style.pots_title}>Pots</h3>
           <a className={style.see_details}>See details <img  src="../../images/icon-caret-right.svg" width="8px" height="12px" /></a>
-        </div>
+        </Link>
         <div className={style.totals_div}>
           <div className={style.total_saved_main}>
-            <img  src="../../images/icon-pot.svg"/>
+            <img  src="../../images/icon-pot.svg" width="40px" height="40px"/>
             <div className={style.total_saved}>
               <h4 className={style.total_saved_title}>Total Saved</h4>
-              <h3 className={style.total_saved_count}>{data && potsTotal}</h3>
+              <h3 className={style.total_saved_count}>${data && potsTotal}</h3>
             </div>
           </div>
           <div className={style.other_pots_main_div}>
@@ -44,8 +45,8 @@ function Overview() {
               if (index !== 4) {
                 return (
                   <div className={style.other_pots_div} id={pot.id} key={pot.id}>
-                    <h4 className={style.pot_title}>{pot.title}</h4>
-                    <p className={style.pot_total}>{pot.total}</p>
+                    <h4 className={style.pot_title}>{pot.name}</h4>
+                    <p className={style.pot_total}>${pot.total}</p>
                   </div>
                 );
               }
@@ -53,7 +54,15 @@ function Overview() {
           </div>
         </div>
       </section>
-      <section className={style.budgets_section}>2</section>
+      <section className={style.budgets_section}>
+        <div className={style.budgets_main_div}>
+          <div className={style.pots_title_div}>
+            <h3 className={style.pots_title}>Budgets</h3>
+            <a className={style.see_details}>See details <img  src="../../images/icon-caret-right.svg" width="8px" height="12px" /></a>
+          </div>
+          {data && <Chart budgets={data.budgets}/>}
+        </div>
+      </section>
       <section className={style.transactions_section}>3</section>
       <section className={style.bills_section}>4</section>
      </div>
