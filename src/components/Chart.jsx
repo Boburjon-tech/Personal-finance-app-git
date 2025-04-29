@@ -9,11 +9,14 @@ export const Chart = ({budgets}) => {
             type: 'donut',
           },
           labels : budgets.map((c)=> c.category),
+          chart :{
+            width: 100
+          },
           responsive: [{
             breakpoint: 480,
             options: {
               chart: {
-                width: 200
+                width: 100
               },
               legend: {
                 position: 'bottom'

@@ -7,7 +7,7 @@
   },
   "transactions": [
     {
-      "avatar": "../assets/images/avatars/emma-richardson.jpg",
+      "avatar": "./assets/images/avatars/emma-richardson.jpg",
       "name": "Emma Richardson",
       "category": "General",
       "date": "2024-08-19T14:23:11Z",
@@ -52,7 +52,7 @@
       "id": 5
     },
     {
-      "avatar": "./assets/images/avatars/liam-hughes.jpg",
+      "avatar": "../assets/images/avatars/liam-hughes.jpg",
       "name": "Liam Hughes",
       "category": "Groceries",
       "date": "2024-08-15T18:20:33Z",

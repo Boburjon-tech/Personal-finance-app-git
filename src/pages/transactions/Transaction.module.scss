@@ -1,0 +1,98 @@
+.transactions_main_div {
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem 4rem;
+    gap: 3.2rem;
+}
+
+.transaction_title {
+    font-size: $text-preset-1;
+    color:$grey-900;
+}
+
+.details_div {
+    padding: 3.2rem;
+    background-color: $white;
+    border-radius: 1.2rem;
+}
+
+.transactions_functions {
+    display: flex;
+    margin-bottom: 2.4rem ;
+    input {
+        margin-right: auto;
+        padding: 1.2rem 2rem;
+        width: 100%;
+        max-width: 32rem;
+        border: 1px solid $grey-500;
+        border-radius: 0.8rem;
+    }
+    input:after
+}
+
+select {
+    padding: 1.2rem 2rem;
+    border-radius:0.8rem;
+}
+label {
+    font-size: $text-preset-4;
+    color:$grey-500;
+}
+
+hr {
+    border:none;
+    height: 1px;
+    background-color: $grey-500;
+}
+
+.sort_div {
+    margin-right: 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    
+    
+}
+
+.res_send_main_div  {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+}
+
+.person_blank {
+    display: flex;
+    justify-content: space-between;
+}
+.person_div {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.person_ava{
+    border-radius: 50%;
+    width: 4rem;
+
+}
+
+.person_name {
+    font-size: $text-preset-4;
+    font-weight: bold;
+    color:$grey-900;
+}
+
+.person_date_categ {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    font-size: $text-preset-4;
+    color:$grey-500;
+}
+
+.person_amount {
+    align-items: center;
+    display: flex;
+    font-size: $text-preset-4;
+    font-weight: bold;
+}

@@ -1,0 +1,138 @@
+.pots_main_div {
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem 4rem;
+    gap: 3.2rem;
+}
+
+.pots_header_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add_pot_btn {
+    padding: 1.6rem;
+    background-color:$grey-900;
+    color:$white;
+}
+
+.pots_detail_main_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+}
+
+.pot_main_div {
+    width: 100%;
+    max-width: 51.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    background-color: $white;
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+}
+
+.pot_header {
+    display: flex;
+    align-items: center;
+}
+
+.pot_theme {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    margin-right: 1.6rem;
+}
+
+.pot_name {
+    margin-right: auto;
+    font-size: $text-preset-2;
+    color:$grey-900;
+}
+
+.pot_coeffs_div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.represent_line {
+    width: 100%;
+    max-width: 47rem;
+    height: 0.8rem;
+    background-color: $beige-100;
+    border-radius: 0.4rem;
+}
+
+.present_line {
+    height: 8px;
+    border-radius: 4px;
+}
+
+.pot_total_saved_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total_title {
+    font-size: $text-preset-4;
+    color: $grey-500;
+}
+
+.total_amount {
+    font-size: $text-preset-1;
+    color:$grey-900;
+}
+.the_present_target {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    margin-bottom: 3.2rem;
+}
+
+.the_present {
+    margin-right: auto;
+    font-size: $text-preset-4;
+    font-weight: bold;
+    color:$grey-500;
+}
+
+.the_target {
+    font-size: $text-preset-4;
+    color:$grey-500;
+}
+
+.add_with_btn {
+    display: flex;
+    justify-content: space-between;  
+    gap: 1.6rem;
+    button {
+        width: 100%;
+        max-width: 31.2rem;
+        background-color: $beige-100;
+    }
+}
+
+
+@media (max-width:768px) {
+    .pots_detail_main_div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pot_main_div {
+        max-width: 68.8rem;
+    }
+
+    .represent_line {
+        max-width: 64rem;
+    }
+}
+
+@media (max-width:400px) {
+
+}
+
+

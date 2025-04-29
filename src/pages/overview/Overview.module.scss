@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+    overflow: auto;
 }
 
 .overviewTitle {
@@ -72,27 +73,32 @@
 // FOUR-DETAILS-GRIDING    ::::::
 
 .four_Details_div {
-    display: grid;
-    grid-template-columns: repeat(16,1fr);
-    grid-template-rows: repeat(10,1fr);
+    display: flex;
     gap: 2.4rem;
 
-    section:nth-child(1){
-        grid-column: 1/9;
-        grid-row: 1/4;
+    section {
+        padding: 3.2rem;
+        background-color:$white;
+        border-radius:1.2rem;
     }
-    section:nth-child(2){
-        grid-column: 9/17;
-        grid-row: 1/6;
-    }
-    section:nth-child(3){
-        grid-column : 1/9;
-        grid-row: 4/10;
-    }
-    section:nth-child(4){
-        grid-column : 9/15;
-        grid-row: 6/10;
-    }
+}
+
+.first_details_tab {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+    max-width: 608px;
+
+}
+
+.second_details_tab {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+    max-width: 608px;
+
 }
 
 // POTS-SECTION ::::::
@@ -102,7 +108,7 @@
     flex-direction: column;
     gap: 2rem;
     background-color: $white;
-    padding: 3.2rem;
+   
     border-radius: 1.2rem;
 }
 
@@ -125,7 +131,8 @@
 }
 
 .totals_div {
-    display: flex;
+    display:flex;
+    
     gap: 2rem;
 
     
@@ -222,7 +229,7 @@
 }
 
 .budgets_main_div {
-    padding: 3.2rem;
+    
     display: flex;
     flex-direction: column;
     gap: 5.1rem;
@@ -237,6 +244,106 @@
     }
 }
 
+.transactions_main_div {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.tran_members {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.member_div {
+    display: flex;
+    align-items: center;
+    
+}
+
+.member_ava {
+    border-radius: 50%;
+    margin-right: 1.6rem;
+}
+
+.member_name {
+    margin-right: auto;
+    font-size: $text-preset-4;
+    font-weight: 700;
+    color:$grey-900;
+}
+
+.member_schoolars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: end;
+    align-items: end;
+}
+
+.member_amount {
+    font-size: $text-preset-4;
+    font-weight: 700;
+}
+
+.member_date {
+    font-size: $text-preset-5;
+    color: $grey-500;
+}
+
+
+
+// BILLS
+
+.bills_main_div {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.bills_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    div {
+        padding: 2rem 1.6rem;
+        background-color:$beige-100;
+        justify-content: space-between;
+        border-radius:0.8rem;
+        border-left: 4px solid $green;
+    }
+    div:nth-child(2){
+        border-left: 4px solid $yellow;
+    }
+    div:nth-child(3){
+        border-left: 4px solid $cyan;
+    }
+}
+
+.paid_bill {
+    display: flex;
+}
+
+.total_bill {
+    display: flex;
+}
+
+.due_bill {
+    display: flex;
+}
+
+.bill_title {
+    color:$grey-500;
+    font-size: $text-preset-4;
+}
+
+.bill_count {
+    color:$grey-900;
+    font-size: $text-preset-4;
+    font-weight: 700;
+}
 
 
 
