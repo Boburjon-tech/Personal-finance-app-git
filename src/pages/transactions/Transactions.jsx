@@ -37,7 +37,7 @@ function Transactions() {
           <div className={style.categ_div}>
               
               <label className={style.label}>Category </label>
-              <select className={style.selection} id="category" name="category">
+              <select className={style.selectione} id="category" name="category">
                     {data && categories.map((c,id)=>{
                       return(<option key={id} value={c}>{c}</option>)
                       
